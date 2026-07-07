@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "blacketjs",
+      "name": "@softfault/blacketjs",
       "devDependencies": {
         "@types/bun": "latest",
         "@types/node": "^26.1.0",

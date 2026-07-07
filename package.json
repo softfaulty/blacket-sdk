@@ -1,5 +1,5 @@
 {
-    "name": "blacketjs",
+    "name": "@softfault/blacketjs",
     "version": "0.1.0",
     "description": "Small TypeScript SDK for the Blacket web API.",
     "module": "./dist/index.js",
@@ -23,7 +23,7 @@
         "build": "bun build ./src/index.ts --target=node --format=esm --outdir=dist && tsc -p tsconfig.build.json",
         "typecheck": "tsc -p tsconfig.json --noEmit",
         "prepublishOnly": "bun run build",
-        "publish": "bun run build && npm publish"
+        "publish": "bun run build && npm publish --access public"
     },
     "keywords": [
         "blacket",
