@@ -197,14 +197,3 @@ src/index.ts   package exports
 - no retry strategy beyond the tiny 503 retry in `BlacketHttp`
 
 the sdk is intentionally boring. boring survives production. flashy abstractions usually just leave fingerprints on the crash report.
-
-## publishing
-
-before publishing:
-
-```bash
-bun run build
-npm publish
-```
-
-`prepublishOnly` runs the build too, because forgetting generated declarations is a classic way to ruin your own afternoon.
