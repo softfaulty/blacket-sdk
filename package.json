@@ -1,0 +1,43 @@
+{
+    "name": "blacket-sdk",
+    "version": "0.1.0",
+    "description": "Small TypeScript SDK for the Blacket web API.",
+    "module": "./dist/index.js",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "type": "module",
+    "private": false,
+    "files": [
+        "dist",
+        "docs",
+        "README.md"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "build": "bun build ./src/index.ts --target=node --format=esm --outdir=dist && tsc -p tsconfig.build.json",
+        "typecheck": "tsc -p tsconfig.json --noEmit",
+        "prepublishOnly": "bun run build",
+        "publish": "bun run build && npm publish"
+    },
+    "keywords": [
+        "blacket",
+        "sdk",
+        "bun",
+        "typescript"
+    ],
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/node": "^26.1.0",
+        "typescript": "^5.5.0"
+    }
+}
