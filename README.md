@@ -1,4 +1,4 @@
-# blacket-sdk
+# blacketjs
 
 small typescript sdk for the blacket web api.
 
@@ -7,7 +7,7 @@ bun package. oop client. cookies in, typed responses out. no dependency pile, no
 ## install
 
 ```bash
-bun add blacket-sdk
+bun add blacketjs
 ```
 
 local dev:
@@ -23,7 +23,7 @@ blacket uses a session cookie. this sdk does not log in for you.
 grab a valid cookie from your app/browser context and pass it in:
 
 ```ts
-import { BlacketClient } from "blacket-sdk";
+import { BlacketClient } from "blacketjs";
 
 const cookie = process.env.COOKIES;
 
@@ -53,7 +53,7 @@ console.log(res.user.username);
 same thing for clans:
 
 ```ts
-import { BlacketClient, type BlacketClan } from "blacket-sdk";
+import { BlacketClient, type BlacketClan } from "blacketjs";
 
 const client = new BlacketClient({ cookie });
 const res = await client.clans.mine();

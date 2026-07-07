@@ -3,9 +3,10 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "blacket-sdk",
+      "name": "blacketjs",
       "devDependencies": {
         "@types/bun": "latest",
+        "@types/node": "^26.1.0",
         "typescript": "^5.5.0",
       },
     },

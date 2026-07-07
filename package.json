@@ -1,5 +1,5 @@
 {
-    "name": "blacket-sdk",
+    "name": "blacketjs",
     "version": "0.1.0",
     "description": "Small TypeScript SDK for the Blacket web API.",
     "module": "./dist/index.js",
